@@ -172,7 +172,8 @@ tls_clientcert_path = "%s"
 	require.Nil(t, os.WriteFile(filepath.Join(tmpDir, "sota.toml"), []byte(sota), 0o777))
 
 	ts := httptest.NewUnstartedServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("OK"))
+		_, err = w.Write([]byte("OK"))
+		require.Nil(t, err)
 	}))
 	defer ts.Close()
 	ts.TLS = pki.TlsConfig
