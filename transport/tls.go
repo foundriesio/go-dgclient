@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/ThalesIgnite/crypto11"
-	"github.com/foundriesio/go-dgclient/v1/sotatoml"
+	"github.com/foundriesio/go-dgclient/sotatoml"
 )
 
 // GetTlsConfig will create the proper tls.Config for mTLS access to a

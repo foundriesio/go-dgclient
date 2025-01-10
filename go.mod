@@ -1,4 +1,4 @@
-module github.com/foundriesio/go-dgclient/v1
+module github.com/foundriesio/go-dgclient
 
 go 1.22
 

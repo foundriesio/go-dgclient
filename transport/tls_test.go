@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/foundriesio/go-dgclient/v1/sotatoml"
+	"github.com/foundriesio/go-dgclient/sotatoml"
 	"github.com/stretchr/testify/require"
 )
 
